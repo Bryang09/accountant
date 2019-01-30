@@ -1,0 +1,60 @@
+.Services {
+  height: 60vh;
+  background: #eeefee;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .servicesContainer {
+    height: 90%;
+    width: 70%;
+    margin: auto;
+    // border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: linear-gradient(90deg, #00c3eb, #2f71d5);
+
+    .service {
+      width: 33.33%;
+      margin: 0;
+      // border: 1px solid #333;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .serviceIcon {
+        height: 40%;
+        // background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 70px;
+          color: #fff;
+        }
+      }
+
+      .serviceText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        h4 {
+          line-height: 2;
+          font-weight: 400;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    #middle {
+      box-shadow: 1px 7px 80px #333;
+    }
+  }
+}
