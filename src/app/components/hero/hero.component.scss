@@ -1,0 +1,28 @@
+.Hero {
+  height: 80vh;
+  background: url(./hero.svg) no-repeat center center / cover;
+  display: flex;
+
+  .heroText {
+    width: 55vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 70px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+  }
+
+  .heroSvg {
+    height: 700px;
+    width: 750px;
+    background: url(./calc.svg) no-repeat center center / cover;
+    transform: translateY(150px);
+  }
+}
