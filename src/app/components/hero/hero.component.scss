@@ -13,6 +13,7 @@
 
     h1 {
       font-size: 70px;
+      text-align: center;
     }
     h3 {
       font-size: 40px;
@@ -33,5 +34,95 @@
     width: 750px;
     background: url(./calc.svg) no-repeat center center / cover;
     transform: translateY(150px);
+  }
+}
+
+@media screen and (max-width: 1192px) {
+  .Hero {
+    .heroText {
+      padding-left: 1vw;
+      h1 {
+        font-size: 45px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 30px;
+      }
+    }
+
+    .heroSvg {
+      height: 600px;
+      width: 550px;
+      transform: translate(-4vw, 250px);
+      padding-right: 2vw;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Hero {
+    height: 100vh;
+    // background: url(./hero.svg) no-repeat center center / cover;
+    background: linear-gradient(#00c4ebce, #2f71d565),
+      url(https://images.pexels.com/photos/938963/pexels-photo-938963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+        no-repeat center center / cover;
+    display: flex;
+
+    .heroText {
+      width: 90vw;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      h1 {
+        font-size: 65px;
+      }
+      h3 {
+        font-size: 30px;
+        margin-top: 0;
+      }
+
+      h5 {
+        padding: 15px 20px;
+        border-radius: 35px;
+        background: #1de687;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .heroSvg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hero {
+    .heroText {
+      h1 {
+        font-size: 50px;
+      }
+
+      h3 {
+        font-weight: 300;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .Hero {
+    .heroText {
+      h1 {
+        font-size: 45px;
+        text-align: center;
+      }
+
+      h3 {
+        font-weight: 300;
+      }
+    }
   }
 }
