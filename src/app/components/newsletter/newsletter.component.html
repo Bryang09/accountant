@@ -1,0 +1,30 @@
+<div class="Newsletter">
+  <div class="newsLetterContainer">
+    <h2 [ngStyle]="{ display: submit ? 'none' : 'flex' }">
+      {{ title | titlecase }}
+    </h2>
+    <div class="formContainer">
+      <form
+        [formGroup]="myForm"
+        [ngStyle]="{ display: submit ? 'none' : 'flex' }"
+      >
+        <mat-form-field>
+          <input
+            matInput
+            formControlName="email"
+            placeholder="Type in your email"
+          />
+        </mat-form-field>
+      </form>
+      <h5
+        (click)="onSubmit()"
+        [ngStyle]="{ display: submit ? 'none' : 'flex' }"
+      >
+        Submit
+      </h5>
+    </div>
+    <h2 [ngStyle]="{ display: submit ? 'flex' : 'none' }" id="sent">
+      Email Will Be Sent!
+    </h2>
+  </div>
+</div>

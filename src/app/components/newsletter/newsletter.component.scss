@@ -1,0 +1,76 @@
+.Newsletter {
+  height: 60vh;
+  margin: 15vh 0 5vh;
+  background: linear-gradient(#2fb9d5, #22fcc8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .newsLetterContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-weight: 400;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .formContainer {
+      display: flex;
+
+      form {
+        height: 40px;
+        width: 50%;
+
+        input[type="email"] {
+          width: 100%;
+          outline: none;
+          background: #333;
+          border: none;
+          padding: 5px 10px;
+          color: #fff;
+          height: 80%;
+        }
+      }
+      h5 {
+        color: #fff;
+        margin: 0;
+        margin-left: 50px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: 0.6s ease;
+
+        &:hover {
+          background: #fff;
+          color: #27e4cd;
+        }
+      }
+    }
+  }
+}
+
+.mat-form-field {
+  width: 100%;
+}
+.mat-form-field-label {
+  color: white !important;
+}
+.mat-form-field-underline {
+  background-color: white !important;
+}
+.mat-form-field-ripple {
+  background-color: white !important;
+}
+
+input.mat-input-element {
+  color: #fff;
+}
+
+#sent {
+  justify-content: center;
+}
