@@ -1,4 +1,44 @@
 <nav>
   <div class="logoContainer"><div class="logo"></div></div>
-  <div class="Navigation"></div>
+  <div class="Navigation">
+    <h4
+      *ngFor="let nav of navs"
+      [ngClass]="{ nav: nav.normal, contact: nav.normal === false }"
+    >
+      {{ nav.text }}
+    </h4>
+  </div>
+
+  <div class="burger">
+    <div class="burgerContainer" (click)="onBurger()">
+      <div
+        class="line line1"
+        [ngStyle]="{
+          transform: burger ? 'rotate(45deg)' : 'none',
+          background: burger ? '#fff' : '#333'
+        }"
+      ></div>
+      <div
+        class="line line2"
+        [ngStyle]="{ display: burger ? 'none' : 'flex' }"
+      ></div>
+      <div
+        class="line line3"
+        [ngStyle]="{
+          transform: burger ? 'rotate(-45deg) translate(5px, -3px)' : 'none',
+          background: burger ? '#fff' : '#333'
+        }"
+      ></div>
+    </div>
+
+    <div
+      class="Navigation"
+      [ngStyle]="{
+        display: burger ? 'flex' : 'none'
+      }"
+    >
+      <div class="logo"></div>
+      <h4 *ngFor="let nav of navs" class="burgerLinks">{{ nav.text }}</h4>
+    </div>
+  </div>
 </nav>
