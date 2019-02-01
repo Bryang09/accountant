@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Nav } from "./nav.model";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-nav",
@@ -15,12 +16,15 @@ export class NavComponent implements OnInit {
   ];
 
   burger: boolean = false;
+  url: any;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
+    this.url = this.router.url;
     console.log(this.navs);
     console.log(this.burger);
+    console.log(this.url);
   }
 
   onBurger() {

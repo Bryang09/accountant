@@ -1,9 +1,16 @@
-<nav>
-  <div class="logoContainer"><div class="logo"></div></div>
+<nav [ngStyle]="{ background: url === '/about' ? '#2384d7' : '#00c3eb' }">
+  <div class="logoContainer">
+    <div
+      class="logo"
+      [routerLink]="['/']"
+      routerLinkActive="router-link-active"
+    ></div>
+  </div>
   <div class="Navigation">
     <h4
       *ngFor="let nav of navs"
       [ngClass]="{ nav: nav.normal, contact: nav.normal === false }"
+      routerLink="/{{ nav.link }}"
     >
       {{ nav.text }}
     </h4>
@@ -37,8 +44,14 @@
         display: burger ? 'flex' : 'none'
       }"
     >
-      <div class="logo"></div>
-      <h4 *ngFor="let nav of navs" class="burgerLinks">{{ nav.text }}</h4>
+      <div class="logo" routerLink="/"></div>
+      <h4
+        *ngFor="let nav of navs"
+        class="burgerLinks"
+        routerLink="/{{ nav.link }}"
+      >
+        {{ nav.text }}
+      </h4>
     </div>
   </div>
 </nav>

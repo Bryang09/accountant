@@ -1,0 +1,36 @@
+.Hero {
+  height: 100vh;
+  background: url(./about.svg) no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+
+  .text {
+    width: 40%;
+    padding-left: 5vw;
+
+    h1 {
+      color: #fff;
+      font-weight: 400;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 300;
+      color: #fff;
+      line-height: 2;
+    }
+  }
+
+  .svgCont {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .svg {
+    background: url("./friends.svg") no-repeat center center / cover;
+    width: 625px;
+    height: 460px;
+  }
+}
