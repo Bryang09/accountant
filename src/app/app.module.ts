@@ -11,13 +11,14 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { MatInputModule } from "@angular/material/input";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 import { NavComponent } from "./components/nav/nav.component";
 import { AboutComponent } from "./components/about/about.component";
-import { LandingComponent } from './components/landing/landing.component';
-import { CareersComponent } from './components/careers/careers.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { ServiceComponent } from './components/service/service.component';
-import { AboutHeroComponent } from './components/about/about-hero/about-hero.component';
+import { LandingComponent } from "./components/landing/landing.component";
+import { CareersComponent } from "./components/careers/careers.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { ServiceComponent } from "./components/service/service.component";
+import { AboutHeroComponent } from "./components/about/about-hero/about-hero.component";
 // import {} from '@angular/material';
 
 @NgModule({
@@ -39,7 +40,8 @@ import { AboutHeroComponent } from './components/about/about-hero/about-hero.com
     AppRoutingModule,
     MatInputModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

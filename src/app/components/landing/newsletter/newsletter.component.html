@@ -1,8 +1,12 @@
 <div class="Newsletter">
-  <div class="newsLetterContainer">
+  <div
+    class="newsLetterContainer"
+    [ngStyle]="{ alignItems: submit ? 'center' : 'none' }"
+  >
     <h2 [ngStyle]="{ display: submit ? 'none' : 'flex' }">
       {{ title | titlecase }}
     </h2>
+
     <div class="formContainer">
       <form
         [formGroup]="myForm"
@@ -12,19 +16,43 @@
           <input
             matInput
             formControlName="email"
-            placeholder="Type in your email"
+            placeholder="Type in your Email"
+            (change)="onChange()"
           />
+          <mat-error> Your Email Doesnt Look Right </mat-error>
         </mat-form-field>
       </form>
-      <h5
+      <!-- <button
         (click)="onSubmit()"
-        [ngStyle]="{ display: submit ? 'none' : 'flex' }"
+        [ngStyle]="{
+          display:
+            submit && disabled === true
+              ? 'none'
+              : disabled === false
+              ? 'flex'
+              : null
+        }"
+      > -->
+      <button
+        (click)="onSubmit()"
+        [ngStyle]="{
+          display:
+            disabled || submit || email.invalid
+              ? 'none'
+              : disabled === false
+              ? 'flex'
+              : disabled || submit
+              ? 'none'
+              : none
+        }"
+        type="submit"
       >
         Submit
-      </h5>
+      </button>
     </div>
     <h2 [ngStyle]="{ display: submit ? 'flex' : 'none' }" id="sent">
-      Email Will Be Sent!
+      Email Will Be Sent to: <br />
+      <span>{{ myForm.value.email }}</span>
     </h2>
   </div>
 </div>

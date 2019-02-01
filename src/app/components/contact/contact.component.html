@@ -1,1 +1,42 @@
 <app-nav></app-nav>
+
+<div class="Contact">
+  <h1>Contact Us</h1>
+
+  <form [formGroup]="myForm">
+    <div class="name">
+      <mat-form-field appearance="outline" class="my-form-field">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstName" />
+      </mat-form-field>
+      <mat-form-field id="second" appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastName" />
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="Email"
+        formControlName="email"
+        autocomplete
+      />
+      <mat-error *ngIf="email.invalid && email.touched">
+        Your Email Doesnt Look Right
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Message</mat-label>
+      <textarea
+        matInput
+        placeholder="Message"
+        formControlName="message"
+      ></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary">Lets Get Started</button>
+  </form>
+</div>

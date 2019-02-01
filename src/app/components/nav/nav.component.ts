@@ -10,8 +10,7 @@ import { Router } from "@angular/router";
 export class NavComponent implements OnInit {
   navs: Nav[] = [
     new Nav("About", true, "about"),
-    new Nav("Careers", true, "careers"),
-    new Nav("Services", true, "services"),
+
     new Nav("Contact", false, "contact")
   ];
 
