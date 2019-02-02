@@ -18,21 +18,12 @@
             formControlName="email"
             placeholder="Type in your Email"
             (change)="onChange()"
+            autocomplete
           />
           <mat-error> Your Email Doesnt Look Right </mat-error>
         </mat-form-field>
       </form>
-      <!-- <button
-        (click)="onSubmit()"
-        [ngStyle]="{
-          display:
-            submit && disabled === true
-              ? 'none'
-              : disabled === false
-              ? 'flex'
-              : null
-        }"
-      > -->
+
       <button
         (click)="onSubmit()"
         [ngStyle]="{

@@ -62,3 +62,79 @@
 ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
   color: #169be0;
 }
+
+@media screen and (max-width: 1290px) {
+  .Contact {
+    background-position: 20% center;
+
+    form {
+      button {
+        width: 40%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  .Contact {
+    background: url(./ipad.svg) no-repeat center 1% / cover;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Contact {
+    background-position: 25% center;
+
+    form {
+      width: 60vw;
+      button {
+        width: 40%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Contact {
+    background: url(./medium.svg) no-repeat center 1% / cover;
+
+    form {
+      .name {
+        flex-direction: column;
+
+        .mat-form-field {
+          width: 100%;
+          margin: 0 1%;
+        }
+
+        .mat-form-field:nth-child(1) {
+          width: 100%;
+          margin: 0;
+        }
+
+        #second {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+      button {
+        width: 60%;
+        margin: 1vh auto 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .Contact {
+    background: url(./mobile.svg) no-repeat center 1% / cover;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Contact {
+    background: url(./small.svg) no-repeat center 0% / cover;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Contact {
+    background: url(./xs.svg) no-repeat center 0% / cover;
+  }
+}

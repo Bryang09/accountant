@@ -61,10 +61,9 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1025px) {
   .Hero {
     height: 100vh;
-    // background: url(./hero.svg) no-repeat center center / cover;
     background: linear-gradient(#00c4ebce, #2f71d565),
       url(https://images.pexels.com/photos/938963/pexels-photo-938963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
         no-repeat center center / cover;
