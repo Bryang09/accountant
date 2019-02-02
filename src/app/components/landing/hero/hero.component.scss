@@ -100,7 +100,7 @@
   }
 }
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
   .Hero {
     height: 120vh;
 

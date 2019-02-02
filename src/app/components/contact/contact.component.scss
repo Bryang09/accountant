@@ -1,6 +1,6 @@
 .Contact {
   height: 100vh;
-  background: url(./bg.svg) no-repeat center center / cover;
+  background: url(./svg/bg.svg) no-repeat center center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@
 }
 @media screen and (max-width: 1025px) {
   .Contact {
-    background: url(./ipad.svg) no-repeat center 1% / cover;
+    background: url(./svg/ipad.svg) no-repeat center 1% / cover;
   }
 }
 
@@ -94,7 +94,7 @@
 }
 @media screen and (max-width: 768px) {
   .Contact {
-    background: url(./medium.svg) no-repeat center 1% / cover;
+    background: url(./svg/medium.svg) no-repeat center 1% / cover;
 
     form {
       .name {
@@ -125,28 +125,28 @@
 }
 @media screen and (max-width: 600px) {
   .Contact {
-    background: url(./mobile.svg) no-repeat center 1% / cover;
+    background: url(./svg/mobile.svg) no-repeat center 1% / cover;
   }
 }
 @media screen and (max-width: 500px) {
   .Contact {
-    background: url(./small.svg) no-repeat center 0% / cover;
+    background: url(./svg/small.svg) no-repeat center 0% / cover;
   }
 }
 @media screen and (max-width: 400px) {
   .Contact {
-    background: url(./xs.svg) no-repeat center 0% / cover;
+    background: url(./svg/xs.svg) no-repeat center 0% / cover;
   }
 }
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
   //IPAD
   .Contact {
-    background: url(./ipad-landscape.svg) no-repeat center center / cover;
+    background: url(./svg/ipad-landscape.svg) no-repeat center center / cover;
   }
 }
 
-@media screen and (max-width: 1023px) and (orientation: landscape) {
+@media screen and (max-width: 1023px) and (min-aspect-ratio: 4/3) {
   ::ng-deep .mat-form-field-wrapper {
     padding-bottom: 0 !important;
   }
@@ -171,7 +171,7 @@
   }
 }
 
-@media screen and (max-width: 700px) and (orientation: landscape) {
+@media screen and (max-width: 700px) and (min-aspect-ratio: 4/3) {
   ::ng-deep .mat-form-field-wrapper {
     padding-bottom: 0 !important;
   }

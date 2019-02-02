@@ -67,7 +67,7 @@ nav {
 @media screen and (max-width: 992px) {
 }
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
   nav .Navigation,
   nav .logoContainer {
     display: none;

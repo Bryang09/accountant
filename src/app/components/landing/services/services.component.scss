@@ -121,13 +121,39 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .Services {
-    height: 100vh;
+    height: auto;
+    .servicesContainer {
+      height: auto;
+
+      .service {
+        height: 30vh;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 500px) {
+  .Services {
+    height: auto;
+    .servicesContainer {
+      height: auto;
+
+      .service {
+        height: 60vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Services {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
   .Services {
     height: auto;
 
@@ -139,7 +165,7 @@
     }
   }
 }
-@media screen and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (min-aspect-ratio: 4/3) {
   .Services {
     height: auto;
 

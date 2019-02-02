@@ -94,10 +94,10 @@ input.mat-input-element {
     .newsLetterContainer {
       width: 90%;
       .formContainer {
-        flex-direction: column;
+        flex-direction: row;
 
         form {
-          width: 100%;
+          width: 60%;
         }
 
         h5 {
@@ -117,7 +117,7 @@ input.mat-input-element {
 @media screen and (max-width: 500px) {
 }
 
-@media screen and (max-width: 1025px) and (orientation: landscape) {
+@media screen and (max-width: 1025px) and (min-aspect-ratio: 4/3) {
   .Newsletter .newsLetterContainer .formContainer {
     flex-direction: row;
 
