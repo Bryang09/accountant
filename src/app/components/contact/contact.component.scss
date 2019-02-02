@@ -138,3 +138,60 @@
     background: url(./xs.svg) no-repeat center 0% / cover;
   }
 }
+
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+  //IPAD
+  .Contact {
+    background: url(./ipad-landscape.svg) no-repeat center center / cover;
+  }
+}
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  ::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.9em 0 0.9em 0;
+  }
+
+  ::ng-deep .mat-form-field-infix {
+    border: none;
+  }
+
+  .Contact {
+    form {
+      margin-top: -7vh;
+    }
+
+    h1 {
+      margin-top: -2vh;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  ::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.7em 0 0.7em 0;
+  }
+
+  ::ng-deep .mat-form-field-infix {
+    border: none;
+  }
+
+  .Contact {
+    form {
+      margin-top: -7vh;
+    }
+
+    h1 {
+      margin-top: -2vh;
+      margin-bottom: 50px;
+    }
+  }
+}
