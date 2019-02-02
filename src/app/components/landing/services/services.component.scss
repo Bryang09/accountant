@@ -65,6 +65,7 @@
     height: 500px;
   }
 }
+
 @media screen and (max-width: 992px) {
   .Services {
     height: 80vh;
@@ -123,5 +124,30 @@
 @media screen and (max-width: 500px) {
   .Services {
     height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+  .Services {
+    height: auto;
+
+    .servicesContainer {
+      height: auto;
+      .service {
+        height: 45vh;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .Services {
+    height: auto;
+
+    .servicesContainer {
+      height: auto;
+      .service {
+        height: 65vh;
+      }
+    }
   }
 }

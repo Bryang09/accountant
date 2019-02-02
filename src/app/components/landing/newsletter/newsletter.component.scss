@@ -116,3 +116,17 @@ input.mat-input-element {
 }
 @media screen and (max-width: 500px) {
 }
+
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+  .Newsletter .newsLetterContainer .formContainer {
+    flex-direction: row;
+
+    form {
+      width: 70%;
+    }
+
+    button {
+      width: 80px;
+    }
+  }
+}
