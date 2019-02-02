@@ -36,11 +36,11 @@ nav {
       margin: 0 1%;
       color: #fff;
       font-weight: 400;
-      text-align: center;
       border-radius: 35px;
       padding: 8px 0;
       transition: 0.2s;
       cursor: pointer;
+      text-align: center;
 
       &:hover {
         border-radius: 5px;
@@ -66,6 +66,74 @@ nav {
 }
 @media screen and (max-width: 992px) {
 }
+
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+  nav .Navigation,
+  nav .logoContainer {
+    display: none;
+  }
+
+  nav {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+
+    .burgerContainer {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 5vw;
+      cursor: pointer;
+      position: fixed;
+      top: 25px;
+      left: 5px;
+      z-index: 20;
+
+      .line {
+        height: 3px;
+        width: 30px;
+        background: #333;
+        margin: 1.5px auto;
+        transition: 0.4s ease;
+      }
+    }
+
+    .Navigation {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      background: #1de687;
+      display: flex;
+      flex-direction: column;
+      transition: 1s ease;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        background: url(./logo.svg) no-repeat center center / cover;
+        height: 80px;
+        width: 110px;
+        margin-bottom: 2vh;
+        cursor: pointer;
+      }
+
+      .burgerLinks {
+        color: #fff;
+        margin: 2vh auto;
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav .Navigation,
   nav .logoContainer {
@@ -112,6 +180,8 @@ nav {
       display: flex;
       flex-direction: column;
       transition: 1s ease;
+      justify-content: center;
+      align-items: center;
 
       .logo {
         background: url(./logo.svg) no-repeat center center / cover;
@@ -125,6 +195,7 @@ nav {
         color: #fff;
         margin: 2vh auto;
         font-size: 30px;
+        text-align: left;
       }
     }
   }
